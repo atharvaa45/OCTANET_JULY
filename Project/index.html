@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity and Beyond - website</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- custom CSS for dark mode -->
+    <style>
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        /*body.dark-mode img {
+            filter: invert(1);
+        }*/
+        
+        body.dark-mode .color-heading {
+            color: #00ffff;
+        }
+        
+        /* Additional styles for subtopics */
+        .subtopics {
+            position: fixed;
+            top: 30px;
+            right: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 20px;
+            z-index: 999;
+        }
+        
+        .subtopics a {
+            color: #6c6c6c;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="section-width">
+            <h2 class="heading">Vastness Of Space<br><span class="color-heading">Mission Universe</span> </h2>
+            <p class="content">The past hundred years of astronomy have been characterized by an ever-expanding view of the observable universe. We see many different kinds of stars; billions of stars, from brown dwarfs to super-giants. We also see exploding stars and supernovas, neutron stars, and black holes. Some stars in our own Milky Way galaxy are up to 100,000 light-years away. The Universe is believed to have originated in a powerful event known as the Big Bang, approximately 13.8 billion years ago. The universe is constantly expanding, with galaxies moving away from each other as space itself expands. So, Get ready for liftoff! Journey beyond Earth with out-of-this-world facts, photos, books, and games about all things space.
+            </p>
+            <button class="btn">Explore now</button>
+            <p class="content">Scroll down to explore more...</p>
+            <!-- Toggle switch -->
+            <label class="switch">
+                <input id="themeToggle" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <!-- Subtopics -->
+            <div class="subtopics">
+                <a href="#overview">Overview</a>
+                <a href="#images">Images</a>
+                <a href="#videos">Videos</a>
+                <a href="#media">Media Resources</a>
+            </div>
+        </div>
+        <div class="section-width">
+            <img class="img-width" src="https://www.kennedy-center.org/globalassets/education/resources-for-educators/classroom-resources/artsedge/media/art-space/art-space-169.jpg" alt="Space pic">
+        </div>
+    </header>
+
+    <!-- End of header section -->
+    
+    <!-- JavaScript for toggling theme -->
+    <script>
+        const toggleSwitch = document.querySelector('#themeToggle');
+
+        toggleSwitch.addEventListener('change', function () {
+            if (this.checked) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        });
+    </script>
+
+
+    <section class="container">
+        <h2 class="sub-heading">Learning more about our <span class="color-heading">Universe.</span></h2>
+        <div class="card-section">
+            <div class="card1">
+                <div class="card-img">
+                    <img class="card-img-width" src="https://discovery.sndimg.com/content/dam/images/discovery/fullset/2020/2/20/GettyImages-531356649.jpg.rend.hgtvcom.616.411.suffix/1582236219830.jpeg" alt="">
+                </div>
+                <div class="card-content">
+                    <h4>Matter</h4>
+                    <p class="content">Matter refers to the physical substance that makes up the observable universe. It includes all the particles that have mass and occupy space, such as atoms, molecules, and larger structures like planets, stars, galaxies, and galaxy clusters.
+                    </p>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card-img">
+                    <img class="card-img-width" src="https://www.science.org/do/10.1126/science.aaf4201/abs/shot_black-hole.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h4>Energy</h4>
+                    <p class="content">Energy is another fundamental component of the universe. It exists in various forms, including kinetic energy (associated with motion), potential energy (stored energy), thermal energy (associated with heat), electromagnetic energy (light and other forms of radiation), and more. Energy is closely related to matter through the famous equation E=mc², which states that mass and energy are interchangeable.
+                    </p>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="card-img">
+                    <img class="card-img-width" src="https://miro.medium.com/v2/resize:fit:1400/1*RaR21HexwFW0-MUHyzJgfw.jpeg" alt="">
+                </div>
+                <div class="card-content">
+                    <h4>Space and Time</h4>
+                    <p class="content">Space is the three-dimensional extent in which matter and energy exist. It provides the framework for everything in the universe. Time is the dimension in which events occur and can be measured. It is closely linked to space, forming a four-dimensional continuum called spacetime. Time allows for the ordering of events and the progression from the past, through the present, to the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of card section -->
+
+    <section class="container">
+        <div style="display: flex;">
+            <div class="sectionWidth1">
+                <img class="imgWidth" src="https://images.ctfassets.net/cnu0m8re1exe/76iARqWFwf5VQeHcy7FsYB/75246efbd9ac79410b75b5c0211723ba/shutterstock_738535111.jpg" alt="">
+            </div>
+            <div class="sectionWidth2 sizing">
+                <h3>MilkyWay Galaxy <br> Our Home</h3>
+                <p class="content">The Milky Way is the galaxy that includes the Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye. The term Milky Way is a translation of the Latin via lactea, from the Greek γαλακτικὸς κύκλος (galaktikòs kýklos), meaning "milky circle".
+                </p>
+                <button class="btn">Click Here to Know more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of develop section -->
+    <section class="container">
+        <div class="extraAlign">
+            <div class="sectionWidth2 sizing">
+                <h3>Black Hole <br> Super-Massive & Dangerous </h3>
+                <p class="content">A black hole is a region in space where gravity is so strong that nothing, not even light, can escape its gravitational pull. It is formed when a massive star collapses under its own gravity, causing its core to become extremely dense. The collapse occurs when the star's nuclear fuel is exhausted and no longer able to counteract the force of gravity. Black holes come in different sizes. Stellar black holes are formed from the remnants of massive stars and can have a mass several times that of our Sun. Supermassive black holes, on the other hand, are millions or even billions of times more massive than the Sun and are believed to exist at the centers of most galaxies, including our own Milky Way.
+                </p>
+                <button class="btn">Click Here to Know more</button>
+            </div>
+            <div class="sectionWidth1" style="padding-left: 20px;">
+                <img class="imgWidth" src="https://idsb.tmgrup.com.tr/ly/uploads/images/2023/02/21/258632.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- end of projects section -->
+
+    <section class="container">
+        <h2 class="sub-heading">The<span class="color-heading"> Bing Bang</span></h2>
+        <div class="app-section">
+            <div class="section-width">
+                <img class="appimg" src="https://cdn.mos.cms.futurecdn.net/2W4JDkJF5nvdwYqyrLpsqA.jpg" alt="">
+            </div>
+            <div class="section-width">
+                <h3>Dawn <br>of The <span class="color-heading">Universe</span></h3>
+                <p class="content">The Big Bang is a scientific theory that describes the origin and evolution of the universe. According to this theory, the universe began as an extremely hot and dense state, and it has been expanding and cooling over billions of years. According to the Big Bang theory, about 13.8 billion years ago, all matter, energy, space, and time in the universe were compressed into an incredibly small, hot, and dense singularity. At this point, the universe started to rapidly expand and cool down. As the universe expanded, matter and energy began to separate and form the building blocks of galaxies, stars, and other structures we observe today.
+                </p>
+                <button class="btn">Click Here to Know more</button>
+            </div>
+        </div>
+    </section>
+
+     <!-- end of app section -->
+     <footer class="footer-section">
+         <h4>Explore <span style="color: orangered;">The Unexplored</span></h4>
+         <p>Curiosity, Knowledge, Spaceheads and Research</p>
+         <p>Developed by - <a style="color: orangered;" href="#">Atharva Honrao </a> (Web Development Intern at Octanet)</p>
+         <p>&copy; 2023 - All rights reserved</p>
+     </footer>
+    
+</body>
+</html>
